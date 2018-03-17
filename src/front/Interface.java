@@ -6,6 +6,7 @@ public class Interface extends javax.swing.JFrame {
 
     public Interface() {
         initComponents();
+        setResizable(false);
     }
 
     @SuppressWarnings("unchecked")
@@ -33,7 +34,11 @@ public class Interface extends javax.swing.JFrame {
         btnPrimosEntreSi = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
 
+        btnFatorial.setBackground(new java.awt.Color(255, 255, 255));
+        btnFatorial.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnFatorial.setForeground(new java.awt.Color(0, 153, 153));
         btnFatorial.setText("Fatorial");
         btnFatorial.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -45,6 +50,9 @@ public class Interface extends javax.swing.JFrame {
         resposta.setRows(5);
         jScrollPane1.setViewportView(resposta);
 
+        btnNumPerfeito.setBackground(new java.awt.Color(255, 255, 255));
+        btnNumPerfeito.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnNumPerfeito.setForeground(new java.awt.Color(0, 153, 153));
         btnNumPerfeito.setText("Numero Perfeito");
         btnNumPerfeito.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -52,6 +60,9 @@ public class Interface extends javax.swing.JFrame {
             }
         });
 
+        btnCapicua.setBackground(new java.awt.Color(255, 255, 255));
+        btnCapicua.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnCapicua.setForeground(new java.awt.Color(0, 153, 153));
         btnCapicua.setText("Capicua");
         btnCapicua.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -59,12 +70,17 @@ public class Interface extends javax.swing.JFrame {
             }
         });
 
-        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Primeiro Numero");
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Segundo Numero");
 
+        erro.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         erro.setForeground(new java.awt.Color(255, 0, 0));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -75,17 +91,17 @@ public class Interface extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(erro, javax.swing.GroupLayout.PREFERRED_SIZE, 557, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1)
-                            .addComponent(inputNumero1, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(inputNumero1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(inputNumero2, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(erro, javax.swing.GroupLayout.PREFERRED_SIZE, 557, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                            .addComponent(inputNumero2, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel2))
+                        .addGap(23, 23, 23))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -94,15 +110,18 @@ public class Interface extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jLabel2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(inputNumero1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(inputNumero2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(erro, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
+        btnQuadradoPerfeito.setBackground(new java.awt.Color(255, 255, 255));
+        btnQuadradoPerfeito.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnQuadradoPerfeito.setForeground(new java.awt.Color(0, 153, 153));
         btnQuadradoPerfeito.setText("Quadrado Perfeito");
         btnQuadradoPerfeito.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -110,6 +129,9 @@ public class Interface extends javax.swing.JFrame {
             }
         });
 
+        btnNumeroPrimo.setBackground(new java.awt.Color(255, 255, 255));
+        btnNumeroPrimo.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnNumeroPrimo.setForeground(new java.awt.Color(0, 153, 153));
         btnNumeroPrimo.setText("Numero Primo");
         btnNumeroPrimo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,6 +139,9 @@ public class Interface extends javax.swing.JFrame {
             }
         });
 
+        btnBase10_2.setBackground(new java.awt.Color(255, 255, 255));
+        btnBase10_2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnBase10_2.setForeground(new java.awt.Color(0, 153, 153));
         btnBase10_2.setText("Base 10-2");
         btnBase10_2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -124,6 +149,9 @@ public class Interface extends javax.swing.JFrame {
             }
         });
 
+        btnBase10_8.setBackground(new java.awt.Color(255, 255, 255));
+        btnBase10_8.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnBase10_8.setForeground(new java.awt.Color(0, 153, 153));
         btnBase10_8.setText("Base 10-8");
         btnBase10_8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -131,6 +159,9 @@ public class Interface extends javax.swing.JFrame {
             }
         });
 
+        btnBase10_16.setBackground(new java.awt.Color(255, 255, 255));
+        btnBase10_16.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnBase10_16.setForeground(new java.awt.Color(0, 153, 153));
         btnBase10_16.setText("Base 10-16");
         btnBase10_16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -138,6 +169,9 @@ public class Interface extends javax.swing.JFrame {
             }
         });
 
+        btnMDC.setBackground(new java.awt.Color(255, 255, 255));
+        btnMDC.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnMDC.setForeground(new java.awt.Color(0, 153, 153));
         btnMDC.setText("MDC");
         btnMDC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,6 +179,9 @@ public class Interface extends javax.swing.JFrame {
             }
         });
 
+        btnMMC.setBackground(new java.awt.Color(255, 255, 255));
+        btnMMC.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnMMC.setForeground(new java.awt.Color(0, 153, 153));
         btnMMC.setText("MMC");
         btnMMC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -152,6 +189,9 @@ public class Interface extends javax.swing.JFrame {
             }
         });
 
+        btnPrimosEntreSi.setBackground(new java.awt.Color(255, 255, 255));
+        btnPrimosEntreSi.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnPrimosEntreSi.setForeground(new java.awt.Color(0, 153, 153));
         btnPrimosEntreSi.setText("Primos Entre Si");
         btnPrimosEntreSi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -163,9 +203,8 @@ public class Interface extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(54, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnFatorial)
@@ -188,9 +227,10 @@ public class Interface extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnMMC)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnPrimosEntreSi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGap(51, 51, 51))
+                        .addComponent(btnPrimosEntreSi, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(jScrollPane1)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
