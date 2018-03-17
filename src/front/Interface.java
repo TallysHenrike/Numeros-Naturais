@@ -113,7 +113,7 @@ public class Interface extends javax.swing.JFrame {
 
         btnFatorial.setBackground(new java.awt.Color(255, 255, 255));
         btnFatorial.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnFatorial.setForeground(new java.awt.Color(0, 153, 153));
+        btnFatorial.setForeground(new java.awt.Color(102, 102, 102));
         btnFatorial.setText("Fatorial");
         btnFatorial.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         btnFatorial.addActionListener(new java.awt.event.ActionListener() {
@@ -124,7 +124,7 @@ public class Interface extends javax.swing.JFrame {
 
         btnNumPerfeito.setBackground(new java.awt.Color(255, 255, 255));
         btnNumPerfeito.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnNumPerfeito.setForeground(new java.awt.Color(0, 153, 153));
+        btnNumPerfeito.setForeground(new java.awt.Color(102, 102, 102));
         btnNumPerfeito.setText("Numero Perfeito");
         btnNumPerfeito.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         btnNumPerfeito.addActionListener(new java.awt.event.ActionListener() {
@@ -135,7 +135,7 @@ public class Interface extends javax.swing.JFrame {
 
         btnCapicua.setBackground(new java.awt.Color(255, 255, 255));
         btnCapicua.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnCapicua.setForeground(new java.awt.Color(0, 153, 153));
+        btnCapicua.setForeground(new java.awt.Color(102, 102, 102));
         btnCapicua.setText("Capicua");
         btnCapicua.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         btnCapicua.addActionListener(new java.awt.event.ActionListener() {
@@ -146,7 +146,7 @@ public class Interface extends javax.swing.JFrame {
 
         btnQuadradoPerfeito.setBackground(new java.awt.Color(255, 255, 255));
         btnQuadradoPerfeito.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnQuadradoPerfeito.setForeground(new java.awt.Color(0, 153, 153));
+        btnQuadradoPerfeito.setForeground(new java.awt.Color(102, 102, 102));
         btnQuadradoPerfeito.setText("Quadrado Perfeito");
         btnQuadradoPerfeito.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         btnQuadradoPerfeito.addActionListener(new java.awt.event.ActionListener() {
@@ -157,7 +157,7 @@ public class Interface extends javax.swing.JFrame {
 
         btnBase10_2.setBackground(new java.awt.Color(255, 255, 255));
         btnBase10_2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnBase10_2.setForeground(new java.awt.Color(0, 153, 153));
+        btnBase10_2.setForeground(new java.awt.Color(102, 102, 102));
         btnBase10_2.setText("Base 10-2");
         btnBase10_2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         btnBase10_2.addActionListener(new java.awt.event.ActionListener() {
@@ -168,7 +168,7 @@ public class Interface extends javax.swing.JFrame {
 
         btnBase10_8.setBackground(new java.awt.Color(255, 255, 255));
         btnBase10_8.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnBase10_8.setForeground(new java.awt.Color(0, 153, 153));
+        btnBase10_8.setForeground(new java.awt.Color(102, 102, 102));
         btnBase10_8.setText("Base 10-8");
         btnBase10_8.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         btnBase10_8.addActionListener(new java.awt.event.ActionListener() {
@@ -179,7 +179,7 @@ public class Interface extends javax.swing.JFrame {
 
         btnBase10_16.setBackground(new java.awt.Color(255, 255, 255));
         btnBase10_16.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnBase10_16.setForeground(new java.awt.Color(0, 153, 153));
+        btnBase10_16.setForeground(new java.awt.Color(102, 102, 102));
         btnBase10_16.setText("Base 10-16");
         btnBase10_16.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         btnBase10_16.addActionListener(new java.awt.event.ActionListener() {
@@ -190,7 +190,7 @@ public class Interface extends javax.swing.JFrame {
 
         btnMMC.setBackground(new java.awt.Color(255, 255, 255));
         btnMMC.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnMMC.setForeground(new java.awt.Color(0, 153, 153));
+        btnMMC.setForeground(new java.awt.Color(102, 102, 102));
         btnMMC.setText("MMC");
         btnMMC.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         btnMMC.addActionListener(new java.awt.event.ActionListener() {
@@ -201,7 +201,7 @@ public class Interface extends javax.swing.JFrame {
 
         btnMDC.setBackground(new java.awt.Color(255, 255, 255));
         btnMDC.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnMDC.setForeground(new java.awt.Color(0, 153, 153));
+        btnMDC.setForeground(new java.awt.Color(102, 102, 102));
         btnMDC.setText("MDC");
         btnMDC.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         btnMDC.addActionListener(new java.awt.event.ActionListener() {
@@ -212,7 +212,7 @@ public class Interface extends javax.swing.JFrame {
 
         btnPrimosEntreSi.setBackground(new java.awt.Color(255, 255, 255));
         btnPrimosEntreSi.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnPrimosEntreSi.setForeground(new java.awt.Color(0, 153, 153));
+        btnPrimosEntreSi.setForeground(new java.awt.Color(102, 102, 102));
         btnPrimosEntreSi.setText("Primos Entre Si");
         btnPrimosEntreSi.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         btnPrimosEntreSi.addActionListener(new java.awt.event.ActionListener() {
@@ -223,7 +223,7 @@ public class Interface extends javax.swing.JFrame {
 
         btnNumeroPrimo.setBackground(new java.awt.Color(255, 255, 255));
         btnNumeroPrimo.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnNumeroPrimo.setForeground(new java.awt.Color(0, 153, 153));
+        btnNumeroPrimo.setForeground(new java.awt.Color(102, 102, 102));
         btnNumeroPrimo.setText("Numero Primo");
         btnNumeroPrimo.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         btnNumeroPrimo.addActionListener(new java.awt.event.ActionListener() {
