@@ -8,10 +8,10 @@ public class Resultado extends NNaturais{
         this.input1 = input1;
         this.input2 = input2;
     }
-    public int getCampo1(){
+    public int getCampo1() throws Exception{
         return Integer.parseInt(this.input1);
     }
-    public int getCampo2(){
+    public int getCampo2() throws Exception{
         return Integer.parseInt(this.input2);
     }
     public String fatorial() throws Exception{

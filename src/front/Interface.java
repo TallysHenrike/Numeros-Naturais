@@ -1,7 +1,6 @@
 package front;
 
 import classes.Resultado;
-import classes.NNaturais;
 
 public class Interface extends javax.swing.JFrame {
 
@@ -16,7 +15,6 @@ public class Interface extends javax.swing.JFrame {
         btnFatorial = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         resposta = new javax.swing.JTextArea();
-        erro = new javax.swing.JLabel();
         btnNumPerfeito = new javax.swing.JButton();
         btnCapicua = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
@@ -24,6 +22,7 @@ public class Interface extends javax.swing.JFrame {
         inputNumero2 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        erro = new javax.swing.JLabel();
         btnQuadradoPerfeito = new javax.swing.JButton();
         btnNumeroPrimo = new javax.swing.JButton();
         btnBase10_2 = new javax.swing.JButton();
@@ -66,6 +65,8 @@ public class Interface extends javax.swing.JFrame {
 
         jLabel2.setText("Segundo Numero");
 
+        erro.setForeground(new java.awt.Color(255, 0, 0));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -73,12 +74,17 @@ public class Interface extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(inputNumero1, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(inputNumero2, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addComponent(inputNumero1, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
+                            .addComponent(inputNumero2, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(erro, javax.swing.GroupLayout.PREFERRED_SIZE, 557, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -92,7 +98,9 @@ public class Interface extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(inputNumero1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(inputNumero2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(17, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(erro, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         btnQuadradoPerfeito.setText("Quadrado Perfeito");
@@ -157,7 +165,7 @@ public class Interface extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(54, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnFatorial)
@@ -183,10 +191,6 @@ public class Interface extends javax.swing.JFrame {
                         .addComponent(btnPrimosEntreSi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGap(51, 51, 51))
             .addComponent(jScrollPane1)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(erro, javax.swing.GroupLayout.PREFERRED_SIZE, 557, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(33, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -208,10 +212,7 @@ public class Interface extends javax.swing.JFrame {
                     .addComponent(btnMMC)
                     .addComponent(btnPrimosEntreSi))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(erro, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -219,19 +220,39 @@ public class Interface extends javax.swing.JFrame {
 
     private void btnFatorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFatorialActionPerformed
         Resultado resultado = new Resultado(inputNumero1.getText(), inputNumero2.getText());
-        try{            
-            resposta.setText(resultado.fatorial());
+        try{
+            if("".equals(inputNumero1.getText()) && "".equals(inputNumero2.getText())){
+                throw new Exception("Campos vazios! Preencha os campos com um numero inteiro.");
+            }else if("".equals(inputNumero1.getText())) {
+                throw new Exception("Campo 1 vazio! Preencha o campo com um numero inteiro.");
+            }else if("".equals(inputNumero2.getText())){
+                throw new Exception("Campo 2 vazio! Preencha o campo com um numero inteiro.");
+            }else{
+                resposta.setText(resultado.fatorial());
+            }
             erro.setText("");
-        }catch(Exception er){
-            erro.setText(er.getMessage());
+        }catch(NumberFormatException er){
+            erro.setText("Campo com caractere invalido! Preencha o campo com um numero inteiro.");
+        } catch (Exception ex) {
+            erro.setText(ex.getMessage());
         }
     }//GEN-LAST:event_btnFatorialActionPerformed
 
     private void btnNumPerfeitoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNumPerfeitoActionPerformed
         Resultado resultado = new Resultado(inputNumero1.getText(), inputNumero2.getText());
         try{
-            resposta.setText(resultado.numPerfeito());
+            if("".equals(inputNumero1.getText()) && "".equals(inputNumero2.getText())){
+                throw new Exception("Campos vazios! Preencha os campos com um numero inteiro.");
+            }else if("".equals(inputNumero1.getText())) {
+                throw new Exception("Campo 1 vazio! Preencha o campo com um numero inteiro.");
+            }else if("".equals(inputNumero2.getText())){
+                throw new Exception("Campo 2 vazio! Preencha o campo com um numero inteiro.");
+            }else{
+                resposta.setText(resultado.numPerfeito());
+            }
             erro.setText("");
+        }catch(NumberFormatException er){
+            erro.setText("Campo com caractere invalido! Preencha o campo com um numero inteiro.");
         }catch(Exception er){
             erro.setText(er.getMessage());
         }
@@ -240,8 +261,18 @@ public class Interface extends javax.swing.JFrame {
     private void btnCapicuaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCapicuaActionPerformed
         Resultado resultado = new Resultado(inputNumero1.getText(), inputNumero2.getText());
         try{
-            resposta.setText(resultado.capicua());
+            if("".equals(inputNumero1.getText()) && "".equals(inputNumero2.getText())){
+                throw new Exception("Campos vazios! Preencha os campos com um numero inteiro.");
+            }else if("".equals(inputNumero1.getText())) {
+                throw new Exception("Campo 1 vazio! Preencha o campo com um numero inteiro.");
+            }else if("".equals(inputNumero2.getText())){
+                throw new Exception("Campo 2 vazio! Preencha o campo com um numero inteiro.");
+            }else{
+                resposta.setText(resultado.capicua());
+            }
             erro.setText("");
+        }catch(NumberFormatException er){
+            erro.setText("Campo com caractere invalido! Preencha o campo com um numero inteiro.");
         }catch(Exception er){
             erro.setText(er.getMessage());
         }
@@ -250,9 +281,19 @@ public class Interface extends javax.swing.JFrame {
     private void btnQuadradoPerfeitoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuadradoPerfeitoActionPerformed
         Resultado resultado = new Resultado(inputNumero1.getText(), inputNumero2.getText());
         try{
-            resposta.setText(resultado.quadradoPerfeito());
+            if("".equals(inputNumero1.getText()) && "".equals(inputNumero2.getText())){
+                throw new Exception("Campos vazios! Preencha os campos com um numero inteiro.");
+            }else if("".equals(inputNumero1.getText())) {
+                throw new Exception("Campo 1 vazio! Preencha o campo com um numero inteiro.");
+            }else if("".equals(inputNumero2.getText())){
+                throw new Exception("Campo 2 vazio! Preencha o campo com um numero inteiro.");
+            }else{
+                resposta.setText(resultado.quadradoPerfeito());
+            }
 
             erro.setText("");
+        }catch(NumberFormatException er){
+            erro.setText("Campo com caractere invalido! Preencha o campo com um numero inteiro.");
         }catch(Exception er){
             erro.setText(er.getMessage());
         }
@@ -261,8 +302,18 @@ public class Interface extends javax.swing.JFrame {
     private void btnNumeroPrimoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNumeroPrimoActionPerformed
         Resultado resultado = new Resultado(inputNumero1.getText(), inputNumero2.getText());
         try{
-            resposta.setText(resultado.NumeroPrimo());
+            if("".equals(inputNumero1.getText()) && "".equals(inputNumero2.getText())){
+                throw new Exception("Campos vazios! Preencha os campos com um numero inteiro.");
+            }else if("".equals(inputNumero1.getText())) {
+                throw new Exception("Campo 1 vazio! Preencha o campo com um numero inteiro.");
+            }else if("".equals(inputNumero2.getText())){
+                throw new Exception("Campo 2 vazio! Preencha o campo com um numero inteiro.");
+            }else{
+                resposta.setText(resultado.NumeroPrimo());
+            }
             erro.setText("");
+        }catch(NumberFormatException er){
+            erro.setText("Campo com caractere invalido! Preencha o campo com um numero inteiro.");
         }catch(Exception er){
             erro.setText(er.getMessage());
         }
@@ -271,8 +322,18 @@ public class Interface extends javax.swing.JFrame {
     private void btnBase10_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBase10_2ActionPerformed
         Resultado resultado = new Resultado(inputNumero1.getText(), inputNumero2.getText());
         try{
-            resposta.setText(resultado.base10_2());
+            if("".equals(inputNumero1.getText()) && "".equals(inputNumero2.getText())){
+                throw new Exception("Campos vazios! Preencha os campos com um numero inteiro.");
+            }else if("".equals(inputNumero1.getText())) {
+                throw new Exception("Campo 1 vazio! Preencha o campo com um numero inteiro.");
+            }else if("".equals(inputNumero2.getText())){
+                throw new Exception("Campo 2 vazio! Preencha o campo com um numero inteiro.");
+            }else{
+                resposta.setText(resultado.base10_2());
+            }
             erro.setText("");
+        }catch(NumberFormatException er){
+            erro.setText("Campo com caractere invalido! Preencha o campo com um numero inteiro.");
         }catch(Exception er){
             erro.setText(er.getMessage());
         }
@@ -281,8 +342,18 @@ public class Interface extends javax.swing.JFrame {
     private void btnBase10_8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBase10_8ActionPerformed
         Resultado resultado = new Resultado(inputNumero1.getText(), inputNumero2.getText());
         try{
-            resposta.setText(resultado.base10_8());
+            if("".equals(inputNumero1.getText()) && "".equals(inputNumero2.getText())){
+                throw new Exception("Campos vazios! Preencha os campos com um numero inteiro.");
+            }else if("".equals(inputNumero1.getText())) {
+                throw new Exception("Campo 1 vazio! Preencha o campo com um numero inteiro.");
+            }else if("".equals(inputNumero2.getText())){
+                throw new Exception("Campo 2 vazio! Preencha o campo com um numero inteiro.");
+            }else{
+                resposta.setText(resultado.base10_8());
+            }
             erro.setText("");
+        }catch(NumberFormatException er){
+            erro.setText("Campo com caractere invalido! Preencha o campo com um numero inteiro.");
         }catch(Exception er){
             erro.setText(er.getMessage());
         }
@@ -291,8 +362,18 @@ public class Interface extends javax.swing.JFrame {
     private void btnBase10_16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBase10_16ActionPerformed
         Resultado resultado = new Resultado(inputNumero1.getText(), inputNumero2.getText());
         try{
-            resposta.setText(resultado.base10_16());
+            if("".equals(inputNumero1.getText()) && "".equals(inputNumero2.getText())){
+                throw new Exception("Campos vazios! Preencha os campos com um numero inteiro.");
+            }else if("".equals(inputNumero1.getText())) {
+                throw new Exception("Campo 1 vazio! Preencha o campo com um numero inteiro.");
+            }else if("".equals(inputNumero2.getText())){
+                throw new Exception("Campo 2 vazio! Preencha o campo com um numero inteiro.");
+            }else{
+                resposta.setText(resultado.base10_16());
+            }
             erro.setText("");
+        }catch(NumberFormatException er){
+            erro.setText("Campo com caractere invalido! Preencha o campo com um numero inteiro.");
         }catch(Exception er){
             erro.setText(er.getMessage());
         }
@@ -301,8 +382,18 @@ public class Interface extends javax.swing.JFrame {
     private void btnMDCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMDCActionPerformed
         Resultado resultado = new Resultado(inputNumero1.getText(), inputNumero2.getText());
         try{
-            resposta.setText(resultado.MDC());
+            if("".equals(inputNumero1.getText()) && "".equals(inputNumero2.getText())){
+                throw new Exception("Campos vazios! Preencha os campos com um numero inteiro.");
+            }else if("".equals(inputNumero1.getText())) {
+                throw new Exception("Campo 1 vazio! Preencha o campo com um numero inteiro.");
+            }else if("".equals(inputNumero2.getText())){
+                throw new Exception("Campo 2 vazio! Preencha o campo com um numero inteiro.");
+            }else{
+                resposta.setText(resultado.MDC());
+            }
             erro.setText("");
+        }catch(NumberFormatException er){
+            erro.setText("Campo com caractere invalido! Preencha o campo com um numero inteiro.");
         }catch(Exception er){
             erro.setText(er.getMessage());
         }
@@ -311,8 +402,18 @@ public class Interface extends javax.swing.JFrame {
     private void btnMMCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMMCActionPerformed
         Resultado resultado = new Resultado(inputNumero1.getText(), inputNumero2.getText());
         try{
-            resposta.setText(resultado.MMC());
+            if("".equals(inputNumero1.getText()) && "".equals(inputNumero2.getText())){
+                throw new Exception("Campos vazios! Preencha os campos com um numero inteiro.");
+            }else if("".equals(inputNumero1.getText())) {
+                throw new Exception("Campo 1 vazio! Preencha o campo com um numero inteiro.");
+            }else if("".equals(inputNumero2.getText())){
+                throw new Exception("Campo 2 vazio! Preencha o campo com um numero inteiro.");
+            }else{
+                resposta.setText(resultado.MMC());
+            }
             erro.setText("");
+        }catch(NumberFormatException er){
+            erro.setText("Campo com caractere invalido! Preencha o campo com um numero inteiro.");
         }catch(Exception er){
             erro.setText(er.getMessage());
         }
@@ -321,8 +422,18 @@ public class Interface extends javax.swing.JFrame {
     private void btnPrimosEntreSiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrimosEntreSiActionPerformed
         Resultado resultado = new Resultado(inputNumero1.getText(), inputNumero2.getText());
         try{
-            resposta.setText(resultado.primosEntreSi());
+            if("".equals(inputNumero1.getText()) && "".equals(inputNumero2.getText())){
+                throw new Exception("Campos vazios! Preencha os campos com um numero inteiro.");
+            }else if("".equals(inputNumero1.getText())) {
+                throw new Exception("Campo 1 vazio! Preencha o campo com um numero inteiro.");
+            }else if("".equals(inputNumero2.getText())){
+                throw new Exception("Campo 2 vazio! Preencha o campo com um numero inteiro.");
+            }else{
+                resposta.setText(resultado.primosEntreSi());
+            }
             erro.setText("");
+        }catch(NumberFormatException er){
+            erro.setText("Campo com caractere invalido! Preencha o campo com um numero inteiro.");
         }catch(Exception er){
             erro.setText(er.getMessage());
         }
